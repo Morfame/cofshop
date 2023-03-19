@@ -8,7 +8,7 @@
   <div>
     {% for menu in menus %}
       <div>
-        <h5>{{menu.id}} -- {{menu.name}}</h5>
+        <h5>{{menu.id}} -- <a href="/menu/{{menu.id}}">{{menu.name}}</a></h5>
       </div>
     {% endfor %}
   </div>

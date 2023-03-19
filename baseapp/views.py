@@ -10,5 +10,11 @@ def home(request):
     context = {'menus': menus}
     return render(request, 'baseapp/home.html', context)
 
-def menu(request):
-    return render(request, 'baseapp/menu.html')
+def menu(request, pk):
+    menu = None
+    for i in menus:
+        if i['id'] == int(pk):
+            menu = i
+
+    context = {'menu': menu}
+    return render(request, 'baseapp/menu.html', context)
