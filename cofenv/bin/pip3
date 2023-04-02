@@ -1,4 +1,4 @@
-#!/Users/stevemorris/Projects/cofenv/bin/python
+#!/Users/stevemorris/Projects/cofshop/cofenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

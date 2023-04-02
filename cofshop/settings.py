@@ -13,8 +13,7 @@ SECRET_KEY = "django-insecure-(n+%mg%mxl3y($y%i0vcptaa25camp6mgymkj2l85#=x_9r*it
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['Morfame.pythonanywhere.com']
 
 # Application definition
 
