@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-(n+%mg%mxl3y($y%i0vcptaa25camp6mgymkj2l85#=x_9r*it
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Morfame.pythonanywhere.com']
+ALLOWED_HOSTS = ['Morfame.pythonanywhere.com', 'localhost']
 
 # Application definition
 
@@ -105,13 +105,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# ---------- UN COMMENT OUT THIS FOR PRODUCTION ---------- #
+
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#      BASE_DIR / 'static'
-#  ]
+# ---------- COMMENT OUT THIS FOR PRODUCTION ---------- #
+
+STATICFILES_DIRS = [
+     BASE_DIR / 'static'
+ ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
